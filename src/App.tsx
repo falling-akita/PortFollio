@@ -1,14 +1,17 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Mainpage } from "./page/MainPage";
+
+import { TopPage } from "./Page/MainPage";
 
 function App() {
   return (
-    <Router>
+    <Router basename="FATMEN">
       <Routes>
-        <Route path="/" element={<Mainpage />} />{" "}
+        <Route path="/" element={<TopPage />} />{" "}
       </Routes>
     </Router>
   );
 }
+
+//<Router basename=""></Router>
 
 export default App;
